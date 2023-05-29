@@ -1,0 +1,27 @@
+-- Create a table named "store" with columns id, item, price, size, and color.
+
+CREATE TABLE store(id integer Primary Key, item TEXT,price Integer,size text, color text);
+
+-- Insert rows into the "store" table with values for id, item, price, size, and color.
+
+INSERT into store (ID, Item, Price, Size, Color) VALUES
+(1,'shirt',20.00,'M','blue'),
+(2,'jeans',50.00,'L','black'),
+(3,'blanket',20.99,'M','brown'),
+(4,'shoes',30.99,'M', 'black'),
+(5,'wallet', 10.99,'S','brown');
+(6, 'Shorts', 19.99, 'M', 'Blue'),
+(7, 'Sweater', 39.99, 'L', 'Green'),
+(8, 'Jacket', 59.99, 'M', 'Black'),
+(9, 'Blouse', 34.99, 'S', 'White'),
+(10, 'Pants', 44.99, 'XL', 'Brown'),
+(11, 'Shirt', 19.99, 'L', 'Yellow'),
+(12, 'Coat', 89.99, 'M', 'Gray'),
+(13, 'Top', 14.99, 'S', 'Purple'),
+(14, 'Sweatshirt', 34.99, 'M', 'Pink'),
+(15, 'Jumpsuit', 49.99, 'L', 'Black');
+
+-- Calculate the average price from the "price" column in the "store" table and display it as "AveragePrice".
+
+SELECT AVG(Price) AS AveragePrice
+FROM Store;
